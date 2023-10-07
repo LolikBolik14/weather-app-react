@@ -1,0 +1,104 @@
+/* Temperatupe, description and date today in city */
+.temperature-city {
+  color: #497174;
+  width: 100%;
+  margin: 0 auto 20px;
+  padding: 5px;
+  background: rgb(239, 245, 245);
+  background: radial-gradient(
+    circle,
+    rgba(239, 245, 245, 1) 35%,
+    rgba(214, 228, 229, 1) 90%
+  );
+  font-weight: 700;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.2) inset;
+}
+
+.temperature-city:before,
+.temperature-city:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  top: 10px;
+  bottom: 0;
+  left: 30px;
+  right: 30px;
+  border-radius: 30%;
+}
+
+.current {
+  margin: 7px 0;
+}
+
+#icon {
+  width: 70px;
+  position: relative;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.degrees {
+  letter-spacing: -5px;
+  font-size: 3em;
+  text-shadow: 1px 1px 1px silver, -1px 1px 1px silver;
+  transition: all 0.5s;
+}
+
+/* Fahrenheit and Celsius */
+.units {
+  font-size: 23px;
+  letter-spacing: -2px;
+}
+
+.unit {
+  color: #497174;
+  text-decoration: none;
+}
+
+.unit:focus {
+  color: #eb6440;
+  text-shadow: 1px 1px 1px silver, -1px 1px 1px silver;
+  transition: all 0.5s;
+}
+.unit:hover {
+  color: #eb6440;
+  opacity: 0.6;
+  text-shadow: -1px -1px 1px silver, 1px -1px 1px silver;
+}
+
+/* Description Weather */
+ul,
+li {
+  list-style-type: none;
+  line-height: 1.5em;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+#description {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+/* Date and Time */
+.time-day-month {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+#time {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#day,
+#month {
+  font-weight: 500;
+}
+
+.font-weight-bold {
+  font-size: 32px;
+  font-weight: 700;
+}
