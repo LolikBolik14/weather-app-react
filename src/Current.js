@@ -5,9 +5,9 @@ import Logo from "./Logo";
 import Dates from "./Dates";
 import WeatherTemp from "./WeatherTemp";
 
-import "./Forecast.css";
+import "./Current.css";
 
-export default function Forecast(props) {
+export default function Current(props) {
   const [weatherData, setWeatherData] = useState({ loader: false });
   const [city, setCity] = useState(props.defaultCity);
 
