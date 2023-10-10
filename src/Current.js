@@ -41,7 +41,7 @@ export default function Current(props) {
 
   if (weatherData.loader) {
     return (
-      <div className="weather-wrapper">
+      <>
         <div className="d-grid gap-2 d-md-block header">
           <Logo />
 
@@ -88,7 +88,7 @@ export default function Current(props) {
             </div>
           </div>
         </div>
-      </div>
+      </>
     );
   } else {
     Search();
