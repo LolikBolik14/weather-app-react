@@ -4,7 +4,8 @@
   width: 100%;
   margin: 0 auto 20px;
   padding: 5px;
-  background: rgb(239, 245, 245);
+
+  /* background: rgb(239, 245, 245); */
   background: radial-gradient(
     circle,
     rgba(239, 245, 245, 1) 35%,
@@ -68,8 +69,7 @@
 }
 
 /* Description Weather */
-ul,
-li {
+.current-desc {
   list-style-type: none;
   line-height: 1.5em;
   font-size: 18px;

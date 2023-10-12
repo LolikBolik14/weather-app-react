@@ -1,11 +1,13 @@
 import React from "react";
 
+import "./SunPosition.css";
+
 export default function SunPosition() {
   return (
-    <div class="position-sun">
-      <p class="sun">
-        Sunrise <span class="sunrise" id="sunrise"></span> Sunset
-        <span class="sunset" id="sunset"></span>
+    <div className="position-sun">
+      <p className="sun">
+        Sunrise <span className="sunrise" id="sunrise"></span> Sunset
+        <span className="sunset" id="sunset"></span>
       </p>
     </div>
   );

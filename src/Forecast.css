@@ -1,3 +1,103 @@
-.table {
-  color: black;
+/* table,
+.forecast-table,
+.weather-titles {
+  display: inline-block;
+  margin: auto;
+  vertical-align: bottom;
+} */
+
+/* .weather-titles {
+  width: 140px;
+} */
+
+table {
+  border-spacing: 0;
+  empty-cells: hide;
+  color: #497174;
+  width: 73px;
+}
+
+.properties {
+  line-height: 2.5em;
+  list-style: none;
+  margin-left: -20px;
+  text-align: right;
+  margin: 0 10px 0 0;
+  padding-left: 0;
+}
+
+.mini-img {
+  width: 50px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.wind-img {
+  width: 20px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.temperature-max {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+td {
+  padding: 10px 15px;
+  text-align: center;
+  border-bottom: 1px solid #f4eee8;
+  transition: all 0.5s linear;
+}
+
+th {
+  padding: 10px 15px;
+  border-bottom: 1px solid #f4eee8;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+td:nth-child(even) {
+  background: #eff5f5;
+}
+td:nth-child(odd) {
+  background: #d6e4e5;
+}
+th:nth-child(even) {
+  background: #eff5f5;
+}
+th:nth-child(odd) {
+  background: #d6e4e5;
+}
+
+.round-bottom {
+  border-bottom-right-radius: 10px;
+}
+
+.precipitation {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+tr:hover td {
+  background: #eff5f5;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  margin: 10px 0;
+}
+
+.linkGit {
+  margin-left: 40px;
+  color: #497174;
+  text-align: left;
+}
+
+.git {
+  color: #eb6440;
+  text-decoration: none;
 }
