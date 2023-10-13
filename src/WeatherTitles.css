@@ -1,0 +1,11 @@
+.weather-titles {
+  padding-bottom: 15px;
+}
+
+.properties {
+  line-height: 2.6em;
+  list-style: none;
+  text-align: right;
+  margin: 0;
+  padding-left: 0;
+}

@@ -4,6 +4,7 @@ import axios from "axios";
 import Logo from "./Logo";
 import Dates from "./Dates";
 import WeatherTemp from "./WeatherTemp";
+import Forecast from "./Forecast";
 
 import "./Current.css";
 
@@ -15,6 +16,7 @@ export default function Current(props) {
     setWeatherData({
       loader: true,
       date: new Date(response.data.dt * 1000),
+      coordinates: response.data.coord,
       city: response.data.name,
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
@@ -79,7 +81,10 @@ export default function Current(props) {
                     Humidity: <span id="humidity">{weatherData.humidity}</span>%
                   </li>
                   <li>
-                    Wind: <span id="wind">{Math.round(weatherData.wind)}</span>
+                    Wind:{" "}
+                    <span id="wind">
+                      {Math.round((weatherData.wind * 5) / 18)}
+                    </span>
                     m/s
                   </li>
                 </ul>
@@ -88,6 +93,7 @@ export default function Current(props) {
             </div>
           </div>
         </div>
+        <Forecast coordinates={weatherData.coordinates} />
       </>
     );
   } else {
