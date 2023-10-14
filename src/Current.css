@@ -1,11 +1,10 @@
 /* Temperatupe, description and date today in city */
 .temperature-city {
+  border-radius: 7px;
   color: #497174;
   width: 100%;
   margin: 0 auto 20px;
   padding: 5px;
-
-  /* background: rgb(239, 245, 245); */
   background: radial-gradient(
     circle,
     rgba(239, 245, 245, 1) 35%,

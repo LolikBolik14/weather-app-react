@@ -9,25 +9,6 @@ import "./Forecast.css";
 export default function Forecast(props) {
   const [forecast, setForecast] = useState(null);
   const [loaded, setLoaded] = useState(false);
-  // function timeUTC(timestamp) {
-  //   let nowUtc = new Date(timestamp);
-  //   let hoursUtc = nowUtc.getUTCHours();
-  //   if (hoursUtc < 10) {
-  //     hoursUtc = `0${hoursUtc}`;
-  //   }
-  //   let minutesUtc = nowUtc.getUTCMinutes();
-  //   if (minutesUtc < 10) {
-  //     minutesUtc = `0${minutesUtc}`;
-  //   }
-  //   return `${hoursUtc}:${minutesUtc}`;
-  // }
-
-  // function dailyDate(timestamp) {
-  //   let date = new Date(timestamp * 1000);
-  //   let day = date.getDay();
-  //   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  //   return days[day];
-  // }
 
   function showForecast(response) {
     setForecast(response.data.daily);
@@ -35,10 +16,9 @@ export default function Forecast(props) {
   }
 
   if (loaded) {
-    console.log(forecast);
     return (
       <>
-        <SunPosition />
+        <SunPosition sun={forecast} time={props.time} />
         <div className="container forecast">
           <div className="row row-forecast">
             <WeatherTitles />
@@ -48,6 +28,8 @@ export default function Forecast(props) {
       </>
     );
   } else {
+    console.log(props.coordinates);
+
     let longitude = props.coordinates.lon;
     let latitude = props.coordinates.lat;
 

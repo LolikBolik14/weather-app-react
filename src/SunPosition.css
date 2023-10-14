@@ -1,4 +1,8 @@
+.position-sun {
+  margin-top: 50px;
+}
 .sun {
   text-align: right;
-  margin-right: 10px;
+  margin-right: 20px;
+  margin-bottom: 2px;
 }

@@ -23,6 +23,7 @@ export default function Current(props) {
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed * 3.6,
       icon: `images/${response.data.weather[0].icon}.svg`,
+      zone: response.data.timezone,
     });
   }
 
@@ -93,7 +94,10 @@ export default function Current(props) {
             </div>
           </div>
         </div>
-        <Forecast coordinates={weatherData.coordinates} />
+        <Forecast
+          coordinates={weatherData.coordinates}
+          time={weatherData.zone}
+        />
       </>
     );
   } else {
