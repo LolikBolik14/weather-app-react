@@ -3,6 +3,7 @@
 }
 
 .properties {
+  width: max-content;
   line-height: 2.6em;
   list-style: none;
   text-align: right;

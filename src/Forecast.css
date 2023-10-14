@@ -1,3 +1,7 @@
+.forecast-table {
+  padding: 0;
+}
+
 .row-forecast {
   align-items: flex-end;
 }

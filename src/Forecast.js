@@ -22,20 +22,31 @@ export default function Forecast(props) {
         <div className="container forecast">
           <div className="row row-forecast">
             <WeatherTitles />
-            <ForecastData data={forecast} />
+            {forecast.map(function (dailyForecast, index) {
+              if (index < 7) {
+                return (
+                  <div
+                    className="col forecast-table"
+                    id="forecast-table"
+                    key={index}>
+                    <ForecastData data={dailyForecast} />
+                  </div>
+                );
+              }
+            })}
           </div>
         </div>
       </>
     );
   } else {
-    console.log(props.coordinates);
-
     let longitude = props.coordinates.lon;
     let latitude = props.coordinates.lat;
 
     let apiKey = "e0a5a97de9a0b7a951e9d154a8f9bad8";
     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+
     axios.get(apiUrl).then(showForecast);
-    return "Loading";
+
+    return null;
   }
 }
