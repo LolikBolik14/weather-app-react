@@ -23,7 +23,7 @@ export default function ForecastData(props) {
   }
 
   function icons() {
-    let icons = `images/${props.data.weather.icon}.svg`;
+    let icons = `images/${props.data.weather[0].icon}.svg`;
     return `${icons}`;
   }
 
