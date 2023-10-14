@@ -4,7 +4,7 @@ import Current from "./Current";
 
 import Footer from "./Footer";
 
-import "./Weather.css";
+import "./App.css";
 
 export default function App() {
   return (

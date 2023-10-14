@@ -1,0 +1,14 @@
+footer {
+  margin: 10px 0;
+}
+
+.linkGit {
+  margin-left: 40px;
+  color: #497174;
+  text-align: left;
+}
+
+.git {
+  color: #eb6440;
+  text-decoration: none;
+}
