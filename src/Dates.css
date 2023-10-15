@@ -1,0 +1,19 @@
+.time-day-month {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+#time {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#day,
+#month {
+  font-weight: 500;
+}
+
+.font-weight-bold {
+  font-size: 32px;
+  font-weight: 700;
+}

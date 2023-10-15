@@ -1,0 +1,15 @@
+.logo-title {
+  font-family: "Covered By Your Grace", cursive;
+  font-size: 42px;
+  color: #fff;
+  margin: 0;
+  text-shadow: -1px -1px 1px silver, 1px -1px 1px silver;
+}
+
+.img-logo {
+  width: 32px;
+}
+
+.logo {
+  width: 300px;
+}

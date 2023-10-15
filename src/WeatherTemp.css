@@ -1,0 +1,34 @@
+#icon {
+  width: 70px;
+  position: relative;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.degrees {
+  letter-spacing: -5px;
+  font-size: 3em;
+  text-shadow: 1px 1px 1px silver, -1px 1px 1px silver;
+  transition: all 0.5s;
+}
+
+/* Fahrenheit and Celsius */
+.units {
+  font-size: 23px;
+  letter-spacing: -2px;
+}
+
+.unit {
+  color: #497174;
+  text-decoration: none;
+}
+
+.unit:focus {
+  color: #eb6440;
+  text-shadow: 1px 1px 1px silver, -1px 1px 1px silver;
+  transition: all 0.5s;
+}
+.unit:hover {
+  color: #eb6440;
+  opacity: 0.6;
+  text-shadow: -1px -1px 1px silver, 1px -1px 1px silver;
+}

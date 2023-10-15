@@ -1,0 +1,72 @@
+.weather-table {
+  border-spacing: 0;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.weather-table:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.mini-img {
+  width: 50px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.wind-img {
+  width: 20px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.temperature-max {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+td {
+  color: #497174 !important;
+  padding: 10px 15px;
+  text-align: center;
+  border-bottom: 1px solid #f4eee8;
+  transition: all 0.5s linear;
+}
+
+.head {
+  color: #eb6440 !important;
+  border-bottom: 1px solid #f4eee8;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+td:nth-child(even) {
+  background: #eff5f5;
+}
+td:nth-child(odd) {
+  background: #d6e4e5;
+}
+.head:nth-child(even) {
+  background: #eff5f5;
+}
+.head:nth-child(odd) {
+  background: #d6e4e5;
+}
+
+/* .round-bottom {
+  border-bottom-right-radius: 10px;
+} */
+
+.precipitation {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: none;
+}
+
+tr:hover td {
+  background: #eff5f5;
+  font-weight: bold;
+}

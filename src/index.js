@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import App from "./App";
 
-import "./Weather.css";
+import "./App.css";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);

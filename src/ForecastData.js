@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./ForecastData.css";
+
 export default function ForecastData(props) {
   function dailyDate() {
     let date = new Date(props.data.dt * 1000);
@@ -27,36 +29,43 @@ export default function ForecastData(props) {
     return `${icons}`;
   }
 
+  function precipitation() {
+    let precipitation = Math.round(100 * props.data.pop);
+    return `${precipitation}`;
+  }
+
   return (
-    <table className="table">
+    <table className="table align-middle weather-table">
       <thead>
         <tr>
-          <th scope="col">{dailyDate()}</th>
+          <th className="text-center head" scope="col">
+            {dailyDate()}
+          </th>
         </tr>
       </thead>
       <tbody>
         <tr className="img-weather">
-          <td>
+          <td className="cell">
             <img src={icons()} alt=" " className="mini-img" />
           </td>
         </tr>
         <tr className="temperature-max">
-          <td>{maxTemperature()}°</td>
+          <td className="cell">{maxTemperature()}°</td>
         </tr>
         <tr className="temperature-min">
-          <td>{minTemperature()}°</td>
+          <td className="cell">{minTemperature()}°</td>
         </tr>
         <tr className="pressure">
-          <td>{props.data.pressure}</td>
+          <td className="cell">{props.data.pressure}</td>
         </tr>
         <tr className="humidity">
-          <td>{props.data.humidity}</td>
+          <td className="cell">{props.data.humidity}</td>
         </tr>
         <tr className="wind">
-          <td>{windSpeed()}</td>
+          <td className="cell">{windSpeed()}</td>
         </tr>
         <tr>
-          <td className="precipitation">{100 * props.data.pop}</td>
+          <td className="precipitation">{precipitation()}</td>
         </tr>
       </tbody>
     </table>

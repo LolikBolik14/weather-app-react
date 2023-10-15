@@ -29,9 +29,12 @@ export default function SunPosition(props) {
   return (
     <div className="position-sun">
       <p className="sun">
-        Sunrise {showSunrise()}
-        <span className="sunrise" id="sunrise"></span> Sunset {showSunset()}
-        <span className="sunset" id="sunset"></span>
+        <span className="sunrise" id="sunrise">
+          Sunrise {showSunrise()}
+        </span>{" "}
+        <span className="sunset" id="sunset">
+          Sunset {showSunset()}
+        </span>
       </p>
     </div>
   );
