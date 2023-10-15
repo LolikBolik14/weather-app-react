@@ -31,7 +31,7 @@ export default function SunPosition(props) {
       <p className="sun">
         <span className="sunrise" id="sunrise">
           Sunrise {showSunrise()}
-        </span>{" "}
+        </span>
         <span className="sunset" id="sunset">
           Sunset {showSunset()}
         </span>

@@ -56,10 +56,6 @@ td:nth-child(odd) {
   background: #d6e4e5;
 }
 
-/* .round-bottom {
-  border-bottom-right-radius: 10px;
-} */
-
 .precipitation {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
